@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-class LeutenantGenera : Private{
+class LeutenantGenera : Private, ILeutenantGeneral{
     public List<Private> Privates { get; set; }
     public LeutenantGenera(int id, string firstName, string lastName, double salary, List<Private> privates) : base(id, firstName, lastName, salary) {
         Privates = privates;

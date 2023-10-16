@@ -1,7 +1,7 @@
 ﻿using System.Reflection;
 using System.Text;
 
-class Commando : Private, ISpecialisedSoldier{
+class Commando : Private, ISpecialisedSoldier, ICommando{
     public string Corps { get; set; }
     public static List<Mission> Missions { get; set; }
     public Commando(int id, string firstName, string lastName, double salary, string corps, List<Mission> missions) : base(id, firstName, lastName, salary)

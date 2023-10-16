@@ -1,6 +1,6 @@
 ﻿using System.Text;
 
-class Engineer : Private, ISpecialisedSoldier{
+class Engineer : Private, ISpecialisedSoldier, IEngineer{
     public static List<Repair> RepairList { get; set; }
     public string Corps { get; set; }
     public Engineer(int id, string firstName, string lastName, double salary, string corps, List<Repair> repairList) : base(id, firstName, lastName, salary)
